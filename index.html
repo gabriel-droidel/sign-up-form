@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<title>Sign Up Form</title>
+	</head>
+	<body>
+		<section class="left">
+			<div class="background-box">
+				<img
+					src="/assets/odin-lined.png"
+					alt="Odin Logo" />
+				<h1>ODIN</h1>
+			</div>
+			<div class="credits">
+				Photo by
+				<a
+					href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+					>Halie West</a
+				>
+				on
+				<a
+					href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+					>Unsplash</a
+				>
+			</div>
+		</section>
+		<section class="right">
+			<div class="header">
+				<div>
+					<p>
+						This is not a real online service! You know you need something like
+						this in your life to help you realize your deepest dreams.
+					</p>
+					<p>Sign up <em>now</em> to get started.</p>
+				</div>
+				<p>You <em>know</em> you want to.</p>
+			</div>
+			<div class="form">
+				<h2>Let's do this!</h2>
+				<form method="post">
+					<div class="name row">
+						<div>
+							<label for="fname">FIRST NAME</label>
+							<input
+								type="text"
+								name="first_name"
+								id="fname"
+								required />
+						</div>
+						<div>
+							<label for="lname">LAST NAME</label>
+							<input
+								type="text"
+								name="last_name"
+								id="lname"
+								required />
+						</div>
+					</div>
+					<div class="contacts row">
+						<div>
+							<label for="email">EMAIL</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								required />
+						</div>
+						<div>
+							<label for="phone">PHONE NUMBER</label>
+							<input
+								type="tel"
+								name="phone-number"
+								id="phone"
+								required />
+						</div>
+					</div>
+					<div class="password row">
+						<div>
+							<label for="passw">PASSWORD</label>
+							<input
+								type="password"
+								name="password"
+								id="passw" 
+								required/>
+						</div>
+						<div>
+							<label for="cpassw">CONFIRM PASSWORD</label>
+							<input
+								type="password"
+								name="confirm-password"
+								id="cpassw"
+								required />
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="footer">
+				<button type="submit">Create Account</button>
+				<p>
+					Already Have an account?
+					<a
+						href="http://"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Log in</a
+					>
+				</p>
+			</div>
+		</section>
+	</body>
+</html>

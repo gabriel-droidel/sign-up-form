@@ -1,0 +1,222 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+body {
+	/* 3. Add accessible line-height */
+	line-height: 1.5;
+	/* 4. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+	isolation: isolate;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+	font-family: 'Norse-Bold';
+	src: url(./assets/Norse-Bold.otf) format('opentype');
+}
+
+/* Page style */
+:root {
+	--background-black-color: rgba(0, 0, 0, 0.5);
+    --padding-left:40px;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	font-family: 'Roboto',sans-serif;
+}
+
+.left {
+    min-width: 400px;
+    padding-top:200px;
+	background-image: url(./assets/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	flex:0;
+}
+
+.left .background-box {
+	background-color: var(--background-black-color);
+	min-width: 100%;
+    padding:10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	color: white;
+}
+
+.background-box{
+    font-size:42px;
+	font-family: 'Norse-Bold', sans-serif;
+}
+
+.left img {
+	height: 100px;
+	width: auto;
+}
+
+.left .credits {
+	position: absolute;
+	bottom: 0;
+	padding: 0.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background-black-color);
+	width: 100%;
+	color: white;
+}
+
+.credits a {
+	color: inherit;
+	font-size:80%;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	background-color: aliceblue;
+}
+
+.right >*{
+    padding-left: var(--padding-left);
+	padding-right: 45%;
+}
+.header {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+    gap:10px;
+    padding-top:120px;
+    padding-bottom:32px;
+}
+
+.header p{
+    font-size:26px;
+    font-weight: 700;
+}
+label{
+    display: block;
+}
+.form {
+	background-color: rgb(224, 221, 221);
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	gap:1rem;
+}
+
+form{
+display: flex;
+flex-direction: column;
+gap:1rem;
+font-size:0.9rem;
+}
+form input{
+	border: none;
+	border-radius: 6px;
+	padding:0.2rem 0.4rem;
+}
+
+form input:focus{
+	outline:none;
+	border:2px solid rgb(112, 165, 245);
+}
+form input[type=password]:invalid{
+	outline: none;
+	border:2px solid rgb(247, 55, 55);
+}
+.row{
+	display: flex;
+	gap:4rem;
+}
+
+.footer{
+	padding:2rem;
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+	font-size:0.9rem;
+}
+
+.footer button{
+	background-color: #596D48;
+	border:none;
+	max-width: 12rem;
+	padding:0.6rem 2rem;
+	border-radius: 5px;
+	color:white;
+	font-weight: bold;
+	font-size: 1rem;
+}
+.footer a{
+	color:#596D48;
+	font-weight: bold;
+	text-decoration: none;
+}
